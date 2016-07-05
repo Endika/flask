@@ -73,7 +73,7 @@ them knowing.
 Say you have a specific URL that, when you sent ``POST`` requests to will
 delete a user's profile (say ``http://example.com/user/delete``).  If an
 attacker now creates a page that sends a post request to that page with
-some JavaScript they just has to trick some users to load that page and
+some JavaScript they just have to trick some users to load that page and
 their profiles will end up being deleted.
 
 Imagine you were to run Facebook with millions of concurrent users and
@@ -101,6 +101,6 @@ arrays to JSON. This was because of a security vulnerability in ECMAScript 4.
 ECMAScript 5 closed this vulnerability, so only extremely old browsers are
 still vulnerable. All of these browsers have `other more serious
 vulnerabilities
-<https://github.com/mitsuhiko/flask/issues/248#issuecomment-59934857>`_, so
+<https://github.com/pallets/flask/issues/248#issuecomment-59934857>`_, so
 this behavior was changed and :func:`~flask.jsonify` now supports serializing
 arrays.
